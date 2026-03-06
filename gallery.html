@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: #ffffff;
+            color: #080838;
+            font-family: "Poppins", sans-serif;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .galleryGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .galleryItem {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .galleryItem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s;
+        }
+
+        .galleryItem:hover img {
+            transform: scale(1.1);
+        }
+
+        .galleryItem::after {
+            content: attr(data-title);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(3, 48, 71, 0.8);
+            color: #fff;
+            font-size: 0.9rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .galleryItem:hover::after {
+            opacity: 1;
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="my icon.jpg" alt="JoWilson">
+        <div class="nav">
+            <a class="navHeader" href="index.html">HOME</a>
+            <a class="navHeader" href="about.html">ABOUT</a>
+            <a class="navHeader" href="services.html">SERVICES</a>
+            <a class="navHeader" href="skills.html">SKILLS</a>
+            <a class="navHeader" href="contact.html">CONTACT</a>
+            <a class="navHeader active" href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>My Gallery</h2>
+        <div class="galleryGrid">
+            <!-- Add your 15 images here -->
+            <div class="galleryItem" data-title="NSTP Orientation"><img src="img13.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="ICCT Computer Laboratory"><img src="img14.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Kindergarten photo"><img src="img11.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Just me"><img src="img12.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="The Victor Statue, Bridgetowne"><img src="img15.jpg" alt="Senior High">
+            </div>
+            <div class="galleryItem" data-title="Opus Mall"><img src="img6.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Venice Grand Canal Mall"><img src="img10.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Tignoan, Real Quezon"><img src="img16.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Balagbag Falls, Real, Quezon"><img src="img5.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Sunrise view from Bridgetowne"><img src="img18.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Sunrise view from Bridgetowne"><img src="img17.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Antipolo Rizal"><img src="img7.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Antipolo Rizal"><img src="img8.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Pililla Wind Farm"><img src="img9.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Tres Compadres"><img src="img1.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Opus Mall"><img src="img2.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="The trio"><img src="img3.jpg" alt="img"></div>
+            <div class="galleryItem" data-title="Mirror shot inside the classroom"><img src="img4.jpg" alt="img"></div>
+        </div>
+    </main>
+</body>
+
+</html>

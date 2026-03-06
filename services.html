@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        #servicesSection {
+            width: 85%;
+            margin: auto;
+        }
+
+        .servicesGrid {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .serviceCard {
+            background: #080838;
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .serviceCard i {
+            margin-bottom: 15px;
+            color: #90d5ff;
+        }
+
+        .serviceCard h3 {
+            margin-bottom: 10px;
+        }
+
+        .serviceCard:hover {
+            transform: translateY(-6px);
+            background: #033047;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="my icon.jpg" alt="JoWilson" width="65px">
+        <div class="nav">
+            <a class="navHeader" href="index.html">HOME</a> 
+            <a class="navHeader" href="about.html">ABOUT</a>
+            <a class="navHeader active" href="services.html">SERVICES</a>
+            <a class="navHeader" href="skills.html">SKILLS</a>
+            <a class="navHeader" href="contact.html">CONTACT</a>
+        <a class="navHeader" href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+    <main>
+
+        <section id="servicesSection">
+
+            <h2>Services</h2>
+
+            <div class="servicesGrid">
+
+                <div class="serviceCard">
+                    <i class="fa-solid fa-code fa-2x"></i>
+                    <h3>Web Development</h3>
+                    <p>I build simple and responsive websites using HTML, CSS, and basic JavaScript. My focus is
+                        creating clean and user-friendly layouts.</p>
+                </div>
+
+                <div class="serviceCard">
+                    <i class="fa-solid fa-pen-ruler fa-2x"></i>
+                    <h3>Website Design</h3>
+                    <p>I design website layouts and UI concepts using Figma to help visualize modern and structured
+                        interfaces.</p>
+                </div>
+
+                <div class="serviceCard">
+                    <i class="fa-solid fa-computer fa-2x"></i>
+                    <h3>Technical Support</h3>
+                    <p>I can help with OS installation, system setup, and troubleshooting basic hardware or software
+                        problems.</p>
+                </div>
+
+                <div class="serviceCard">
+                    <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+                    <h3>Website Maintenance</h3>
+                    <p>I can update website content, fix layout problems, and improve responsiveness for better user
+                        experience.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>

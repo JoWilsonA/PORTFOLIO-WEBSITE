@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joros Wilson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Notable&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #authorBtn .btn {
+            display: inline-block;
+            width: 140px;
+            padding: 10px;
+            border: 2px solid #080838;
+            background: transparent;
+            color: #080838;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: color 0.3s;
+        }
+
+        #authorBtn .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: #080838;
+            z-index: -1;
+            transition: width 0.4s ease;
+        }
+
+        #authorBtn .btn:hover::before {
+            width: 100%;
+        }
+
+        #authorBtn .btn:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="my icon.jpg" alt="JoWilson" width="65px">
+        <div class="nav">
+            <a class="navHeader active" href="index.html">HOME</a> 
+            <a class="navHeader" href="about.html">ABOUT</a>
+            <a class="navHeader" href="services.html">SERVICES</a>
+            <a class="navHeader" href="skills.html">SKILLS</a>
+            <a class="navHeader" href="contact.html">CONTACT</a>
+        <a class="navHeader" href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+
+    <main id="heroSection">
+        <div id="author">
+            <h1>Hi, I'm <br> Joros Wilson</h1>
+            <br>
+            <h4>BS Information System student <br>
+                Aspiring Software Developer</h4>
+            <br>
+            <div id="authorBtn">
+                <a href="projects.html" class="btn">VIEW PROJECTS</a>
+                <a href="MyResume.pdf" class="btn">DOWNLOAD RESUME</a>
+            </div>
+        </div>
+
+        <img src="IMG_20251129_123156.png" width="160px" alt="Jo Wilson">
+    </main>
+
+</body>
+
+</html>

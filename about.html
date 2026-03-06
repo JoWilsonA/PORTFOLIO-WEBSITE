@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jo Wilson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#aboutSection{
+    width: min(1000px, 90%);
+    margin: auto;
+}
+
+#firstSection,
+#secondSection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 0;
+}
+
+#firstSection p,
+#secondSection p{
+    flex: 1 1 320px;
+    max-width: 520px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+#firstSection img,
+#secondSection img{
+    flex: 0 0 auto;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#secondSection{
+    flex-direction: row;
+}
+
+#education{
+    max-width: 650px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10%;
+}
+
+#education h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+details{
+    background:#033047;
+    color:#ffffff;
+    padding:15px 20px;
+    margin-bottom:12px;
+    border-radius:8px;
+    border-left:10px solid #080838;
+    transition:0.3s;
+}
+
+details:hover{
+    transform:translateY(-3px);
+}
+
+summary{
+    font-weight:bold;
+    cursor:pointer;
+    font-size:17px;
+}
+
+details p{
+    margin:5px 0 0 15px;
+}
+
+@media (max-width:768px){
+
+    #firstSection,
+    #secondSection{
+        text-align:center;
+    }
+
+    #firstSection p,
+    #secondSection p{
+        text-align:center;
+    }
+
+}
+
+@media (max-width:480px){
+
+    #firstSection img,
+    #secondSection img{
+        width:160px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="my icon.jpg" alt="JoWilson" width="65px">
+        <div class="nav">
+            <a class="navHeader" href="index.html">HOME</a>
+            <a class="navHeader active" href="about.html">ABOUT</a>
+            <a class="navHeader" href="services.html">SERVICES</a>
+            <a class="navHeader" href="skills.html">SKILLS</a>
+            <a class="navHeader" href="contact.html">CONTACT</a>
+        <a class="navHeader" href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+  <main>
+        <div id="aboutSection">
+
+            <h2>About Me</h2>
+
+            <section id="firstSection">
+                <p>
+                    Hello! I'm Joros Wilson, a first-year BSIS student who dreams of becoming a software developer. I am
+                    also a working student, which motivates me to work harder toward my goals. I started learning web
+                    development after graduating from senior high school, where I began studying HTML, CSS, and the
+                    basics of JavaScript. Since then, I’ve been building simple projects to improve my skills and learn
+                    more about programming.
+                </p>
+                <img src="about img2.jpg" alt="jo wilson" width="100px">
+            </section>
+
+            <section id="secondSection">
+                <img src="about img.jpg" alt="jo wilson" width="100px">
+                <p>
+                    I believe that learning in technology never stops. I continue to study and practice coding to
+                    improve my skills and expand my knowledge. My goal is to become a professional software developer
+                    and create useful applications in the future. With continuous learning, dedication, and hard work, I
+                    hope to achieve my dreams and grow in the tech industry.</p>
+            </section>
+
+
+            <section id="education">
+                <h2>Education</h2>
+
+                <details open>
+                    <summary> ICCT Colleges</summary><br>
+                    <p>&ThinSpace;<strong>2025 &dash; Present</strong></p>
+                    <p>&ThinSpace;Bachelor of Science in Information System</p>
+                    <p>&ThinSpace;Cainta Main Campus</p>
+                </details>
+
+                <details>
+                    <summary>Rizal High School</summary><br>
+                    <p><strong>2023 &dash; 2025</strong> Senior High School</p>
+                    <p>Information and Communication Technology </p>
+                    <p>NC II &dash; Computer System Servicing</p>
+                    <p>Graduated With Honors</p>
+                </details>
+
+                <details>
+                    <summary>Sta. Lucia High School</summary><br>
+                    <p><strong>2021 &dash; 2022</strong> &dash; Junior High School</p>
+                    <p>With Honors</p>
+                </details>
+            </section>
+            <span id="aboutSectionBottom"></span>
+        </div>
+
+    </main>
+</body>
+
+</html>

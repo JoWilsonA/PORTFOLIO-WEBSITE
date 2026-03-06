@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --dark: #080838;
+            --accent: #033047;
+        }
+
+        #contactSection {
+            background: var(--white);
+        }
+
+        #contactSection h2 {
+            text-align: center;
+            color: var(--dark);
+        }
+
+        #contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #emailContact {
+            flex: 1 1 450px;
+        }
+
+        #otherContacts {
+            flex: 1 1 250px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid var(--accent);
+            padding: 10px 5px;
+            font-size: 15px;
+            background: transparent;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-bottom: 2px solid var(--dark);
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: var(--accent);
+        }
+
+        .contact a:hover {
+            color: var(--dark);
+        }
+
+        button {
+            position: relative;
+            width: 140px;
+            padding: 10px;
+            border: 2px solid #080838;
+            background: transparent;
+            color: #080838;
+            font-weight: 600;
+            cursor: pointer;
+            overflow: hidden;
+            transition: color 0.3s;
+            z-index: 1;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: #080838;
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            width: 100%;
+        }
+
+        button:hover {
+            color: #FFFFFF;
+        }
+
+        footer {
+            background: #080838;
+            color: #FFFFFF;
+            padding: 25px 20px;
+            margin-top: 60px;
+        }
+
+        .footerContainer {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footerSocials {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footerSocials a {
+            color: #FFFFFF;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+
+        .footerSocials a:hover {
+            color: #90d5ff;
+            transform: translateY(-3px);
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+        }#formStatus{
+margin-top:10px;
+font-size:14px;
+font-weight:500;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="my icon.jpg" alt="JoWilson" width="65px">
+        <div class="nav">
+            <a class="navHeader" href="index.html">HOME</a>
+            <a class="navHeader" href="about.html">ABOUT</a>
+            <a class="navHeader" href="services.html">SERVICES</a>
+            <a class="navHeader" href="skills.html">SKILLS</a>
+            <a class="navHeader active" href="contact.html">CONTACT</a>
+            <a class="navHeader" href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+    <main>
+        <div id="contactSection">
+            <h2>Contact Me</h2>
+            <div id="contacts">
+                <section id="emailContact">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="fe9104be-8a0b-440f-b4f0-715c10cb0477">
+
+                        <input id="name" type="text" name="name" placeholder="Your Name" required>
+
+                        <input id="email" type="email" name="email" placeholder="Your Email" required>
+
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                        <button id="submitBtn" type="submit">Submit</button>
+
+                        <p id="formStatus"></p>
+                    </form>
+                </section>
+
+                <section id="otherContacts">
+                    <span class="contact">
+                        <i class="fa-brands fa-github fa-2x"></i><a href="https://github.com/JoWilsonA">Jo
+                            Wilson</a></span>
+                    <span class="contact">
+                        <i class="fa-brands fa-facebook fa-2x"></i> <a href="https://www.facebook.com/wilsonjoros/">
+                            Joros Adornado Wilson</a></span>
+                    <span class="contact">
+                        <i class="fa-brands fa-tiktok fa-2x"></i> <a
+                            href="https://www.tiktok.com/@joroswilson7?is_from_webapp=1&sender_device=pc">
+                            Jo_Wilson</a></span>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+
+            <div class="footerSocials">
+                <a href="https://github.com/JoWilsonA"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/wilsonjoros/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@joroswilson7"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p>© 2026 JoWilson | BSIS Student</p>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

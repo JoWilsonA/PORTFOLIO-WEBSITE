@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        #skillsSection {
+            width: 85%;
+            margin: auto;
+        }
+
+
+        .skillsGrid {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+
+        .skillCard {
+            background: #080838;
+            color: #FFFFFF;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skillCard img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        .skillCard h4 {
+            margin-bottom: 10px;
+        }
+
+
+        .skillCard:hover {
+            transform: translateY(-6px);
+            background: #033047;
+        }
+
+
+        .softTitle {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+
+        .softSkillsGrid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+
+        .softCard {
+            background: #080838;
+            color: #FFFFFF;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .softCard:hover {
+            background: #033047;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="my icon.jpg" alt="JoWilson" width="65px">
+        <div class="nav">
+            <a class="navHeader" href="index.html">HOME</a> 
+            <a class="navHeader" href="about.html">ABOUT</a>
+            <a class="navHeader" href="services.html">SERVICES</a>
+            <a class="navHeader active" href="skills.html">SKILLS</a>
+            <a class="navHeader" href="contact.html">CONTACT</a>
+        <a class="navHeader" href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+    <main>
+        <section id="skillsSection">
+
+            <h2>Skills</h2>
+
+            <div class="skillsGrid">
+
+                <div class="skillCard">
+                    <img src="html-svgrepo-com.svg" alt="HTML">
+                    <h4>HTML</h4>
+                    <p>Building structured and semantic web pages.</p>
+                </div>
+
+                <div class="skillCard">
+                    <img src="css-3-svgrepo-com.svg" alt="CSS">
+                    <h4>CSS</h4>
+                    <p>Creating responsive layouts and modern UI designs.</p>
+                </div>
+
+                <div class="skillCard">
+                    <img src="javascript-svgrepo-com.svg" alt="JavaScript">
+                    <h4>JavaScript</h4>
+                    <p>Adding interactivity and dynamic behavior to websites.</p>
+                </div>
+
+                <div class="skillCard">
+                    <img src="figma-svgrepo-com.svg" alt="Figma">
+                    <h4>Figma</h4>
+                    <p>Designing UI layouts and planning website structure.</p>
+                </div>
+
+                <div class="skillCard">
+                    <img src="vs-code-svgrepo-com.svg" alt="VS Code">
+                    <h4>VS Code</h4>
+                    <p>My primary code editor for web development projects.</p>
+                </div>
+
+                <div class="skillCard">
+                    <img src="github-color-svgrepo-com.svg" alt="GitHub">
+                    <h4>GitHub</h4>
+                    <p>Managing repositories and tracking project versions.</p>
+                </div>
+
+            </div>
+
+
+            <h3 class="softTitle">Other Skills</h3>
+
+            <div class="softSkillsGrid">
+
+                <span class="softCard">Team Collaboration</span>
+                <span class="softCard">Time Management</span>
+                <span class="softCard">Problem Solving</span>
+                <span class="softCard">Communication</span>
+                <span class="softCard">OS Installation & Configuration</span>
+                <span class="softCard">Hardware & Software Troubleshooting</span>
+                <span class="softCard">Organizational Skills</span>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
