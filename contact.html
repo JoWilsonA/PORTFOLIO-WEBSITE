@@ -30,7 +30,7 @@
         }
 
         #contacts {
-            display: flex;
+            display: block;
             flex-wrap: wrap;
             gap: 40px;
             max-width: 1000px;
@@ -42,13 +42,21 @@
         }
 
         #otherContacts {
+            display: flex;
             flex: 1 1 250px;
+            margin:auto 20px;
+            padding: 1rem;
+            flex-direction: row;
+            gap: 20px;
         }
 
         form {
+            margin: auto 1rem;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             gap: 25px;
+            background-color: #03304721;
         }
 
         input,
@@ -76,8 +84,13 @@
             align-items: center;
             gap: 12px;
             margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
         }
 
+        .contact:hover{
+            background: #03304721;
+        }
         .contact a {
             text-decoration: none;
             color: var(--accent);
@@ -99,6 +112,7 @@
             overflow: hidden;
             transition: color 0.3s;
             z-index: 1;
+            margin: auto;
         }
 
         button::before {
@@ -156,17 +170,19 @@
         footer p {
             font-size: 14px;
             opacity: 0.8;
-        }#formStatus{
-margin-top:10px;
-font-size:14px;
-font-weight:500;
-}
+        }
+
+        #formStatus {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 500;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="my icon.jpg" alt="JoWilson" width="65px">
+        <img src="IMAGES/my icon.jpg" alt="JoWilson" width="65px">
         <div class="nav">
             <a class="navHeader" href="index.html">HOME</a>
             <a class="navHeader" href="about.html">ABOUT</a>
