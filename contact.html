@@ -33,7 +33,7 @@
             display: block;
             flex-wrap: wrap;
             gap: 40px;
-            max-width: 1000px;
+            width: min(1000px, 90%);
             margin: auto;
         }
 
@@ -140,6 +140,16 @@
             color: #FFFFFF;
             padding: 25px 20px;
             margin-top: 60px;
+        }
+
+        #otherContacts{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contact i {
+            text-align: center;
+            color: #16384d;
         }
 
         .footerContainer {
